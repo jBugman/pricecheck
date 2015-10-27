@@ -6,7 +6,7 @@ import (
 
 	"github.com/goml/gobrain"
 
-	"github.com/jBugman/nnfun/poe"
+	"github.com/jBugman/pricecheck/poe"
 )
 
 const (
@@ -101,4 +101,8 @@ func main() {
 0.2% of Physical Attack Damage Leeched as Life
 11% increased Area Damage
 Totems gain +6% to all Elemental Resistances`, "3 chaos")
+	testFunc(`Ghoul Ruin Viridian Jewel
+14% increased Physical Damage with Claws
+13% increased Chaos Damage
+5% increased Attack Speed`, "10 chaos")
 }

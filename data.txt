@@ -272,3 +272,327 @@ Rupturing Crimson Jewel of Menace
 10% increased Global Critical Strike Chance
 11% increased Critical Strike Multiplier with Two Handed Melee Weapons
 $ 4 chaos
+
+Slicing Viridian Jewel of Deadliness
+6% increased Attack Speed with Daggers
+6% increased Accuracy Rating
+10% increased Global Critical Strike Chance
+$ 4 chaos
+
+Sundering Crimson Jewel of Strength
++15 to Strength
+17% increased Critical Strike Chance with Two Handed Melee Weapons
+$ 10 chaos
+
+Enlightened Viridian Jewel of Burning
+8% increased maximum Mana
+3% increased Ignite Duration on Enemies
+3% chance to Ignite
+$ 10 chaos
+
+Avalanching Crimson Jewel of Efficiency
+17% increased Critical Strike Chance with Cold Skills
+5% reduced Mana Cost of Skills
+$ 10 chaos
+
+Brutal Crimson Jewel of Cunning
+14% increased Physical Damage with Maces
++10 to Dexterity and Intelligence
+$ 10 chaos
+
+Charging Crimson Jewel of Cunning
+5% increased Attack Speed while holding a Shield
++9 to Dexterity and Intelligence
+$ 10 chaos
+
+Evasive Viridian Jewel of Shelter
+18% increased Evasion Rating
++12% to Cold and Lightning Resistances
+$ 10 chaos
+
+Enlightened Cobalt Jewel of the Hearth
+6% increased maximum Mana
++10% to Fire and Cold Resistances
+$ 10 chaos
+
+Champion's Crimson Jewel of Berserking
+12% increased Physical Damage with Two Handed Melee Weapons
+3% increased Attack Speed
+$ 1 exalt
+
+Beating Crimson Jewel of Demolishing
+6% increased Attack Speed with Maces
+8% increased Melee Critical Strike Multiplier
+$ 1 exalt
+
+Chilling Cobalt Jewel of Resistance
+14% increased Cold Damage
++8% to all Elemental Resistances
+$ 1 exalt
+
+Hungering Crimson Jewel of the Hearth
+0.37% of Physical Attack Damage Leeched as Life
++10% to Fire and Cold Resistances
+$ 15 chaos
+
+Cleaving Crimson Jewel of Wounding
+9% increased Damage
+7% increased Attack Speed with Axes
+$ 15 chaos
+
+Sinister Viridian Jewel of Combat
+15% increased Physical Damage with Axes
+12% increased Melee Damage
+$ 1 exalt
+
+Avalanching Cobalt Jewel of Unmaking
+15% increased Critical Strike Chance with Cold Skills
+10% increased Critical Strike Multiplier for Spells
+$ 1 exalt
+
+Avalanching Cobalt Jewel of Enchanting
+3% increased Cast Speed
+16% increased Critical Strike Chance with Cold Skills
+$ 20 chaos
+
+Incinerating Viridian Jewel of Freezing
+16% increased Critical Strike Chance with Fire Skills
+16% increased Freeze Duration on Enemies
+2% chance to Freeze
+$ 20 chaos
+
+Flaming Crimson Jewel of Combat
+16% increased Fire Damage
+12% increased Melee Damage
+$ 1 exalt
+
+Volleying Viridian Jewel of Grounding
+7% increased Attack Speed with Bows
++15% to Lightning Resistance
+$ 15 chaos
+
+Volleying Viridian Jewel of Entropy
+11% increased Damage over Time
+6% increased Attack Speed with Bows
+$ 15 chaos
+
+Vivid Cobalt Jewel of Shelter
+6% increased maximum Life
++12% to Cold and Lightning Resistances
+$ 15 chaos
+
+Infernal Crimson Jewel of Soaring
+12% increased Critical Strike Multiplier with Fire Skills
+8% increased Projectile Speed
+$ 16 chaos
+
+Battlemage's Cobalt Jewel of Dexterity
+15% increased Spell Damage while holding a Shield
++13 to Dexterity
+$ 16 chaos
+
+Chaotic Crimson Jewel
+12% increased Chaos Damage
+$ 16 chaos
+
+Humming Crimson Jewel of Zeal
+15% increased Lightning Damage
+3% increased Attack and Cast Speed
+$ 20 chaos
+
+Flaming Crimson Jewel of Soaring
+15% increased Fire Damage
+7% increased Projectile Speed
+$ 15 regret
+
+Vivid Crimson Jewel of Rejuvenation
+7% increased maximum Life
++3 Life gained for each Enemy hit by your Attacks
+$ 1 exalt
+
+Slicing Viridian Jewel of Archery
+6% increased Attack Speed with Daggers
+10% increased Projectile Damage
+$ 20 chaos
+
+Gladiator's Viridian Jewel of Archery
+13% increased Physical Weapon Damage while Dual Wielding
+12% increased Projectile Damage
+$ 1 exalt
+
+Sinister Viridian Jewel of Grounding
+15% increased Physical Damage with Axes
++12% to Lightning Resistance
+$ 1 exalt
+
+Warding Cobalt Jewel of Shelter
+5% increased Cast Speed while holding a Shield
++11% to Cold and Lightning Resistances
+$ 10 chaos
+
+Sol Eye Crimson Jewel
+1% additional Chance to Block Spells with Staves
+14% increased Cold Damage
++12% to Fire and Lightning Resistances
+$ 5 chaos
+
+Blight Vessel Crimson Jewel
++16 to Dexterity
+15% increased Lightning Damage
+17% increased Critical Strike Chance with One Handed Melee Weapons
++10% to all Elemental Resistances
+$ 5 chaos
+
+Gale Desire Crimson Jewel
+16% increased Weapon Critical Strike Chance while Dual Wielding
+8% increased Melee Critical Strike Multiplier
+13% increased Stun Recovery
+$ 7 chaos
+
+Brood Glisten Crimson Jewel
++13 to Dexterity
+4% increased Attack Speed
+0.4% of Physical Attack Damage Leeched as Life
+$ 10 chaos
+
+Fulgent Ruin Crimson Jewel
+0.22% of Physical Attack Damage Leeched as Life
+3% reduced Mana Cost of Skills
+3% increased Attack and Cast Speed
+$ 5 chaos
+
+Chimeric Roar Crimson Jewel
+16% increased Physical Damage with Axes
+9% increased Global Critical Strike Chance
+0.29% of Physical Attack Damage Leeched as Life
+$ 3 chaos
+
+Honour Splinter Crimson Jewel
+6% increased Attack Speed with Axes
+15% increased Critical Strike Chance with Two Handed Melee Weapons
+10% increased Stun Duration on Enemies
+5% reduced Mana Cost of Skills
+$ 2 chaos
+
+Sol Bite Crimson Jewel
+14% increased Physical Weapon Damage while Dual Wielding
+8% increased Attack Speed with Swords
+12% increased Stun Recovery
+4% increased Attack and Cast Speed
+$ 3 chaos
+
+Pandemonium Prism Cobalt Jewel
+1% additional Chance to Block Spells while Dual Wielding
+16% increased Physical Damage
+11% increased Projectile Damage
+$ 5 chaos
+
+Dragon Scar Viridian Jewel
+5% increased Attack Speed with One Handed Melee Weapons
+14% increased Melee Physical Damage while holding a Shield
++8 to Strength and Dexterity
+$ 2 chaos
+
+Foe Blood Crimson Jewel
+8% increased Damage
+12% increased Damage over Time
+6% increased Attack Speed while holding a Shield
+8% increased Attack Speed with Swords
+$ 7 chaos
+
+Armageddon Heart Viridian Jewel
+14% increased Physical Damage
++16 to Dexterity
+10% increased Global Critical Strike Chance
+$ 10 chaos
+
+Entropy Bloom Viridian Jewel
+4% increased Attack Speed while Dual Wielding
+11% increased Critical Strike Multiplier with Cold Skills
+6% chance to Knock Enemies Back on hit
+$ 5 chaos
+
+Eagle Prism Viridian Jewel
+16% increased Cold Damage
+8% increased Attack Speed with Claws
+4% reduced Mana Cost of Skills
+$ 10 chaos
+
+Apocalypse Vessel Viridian Jewel
+16% increased Physical Damage
+6% increased Attack Speed with One Handed Melee Weapons
++13% to Cold Resistance
+15% increased Shock Duration on Enemies
+2% chance to Shock
+$ 5 chaos
+
+Rapture Curio Cobalt Jewel
+15% increased Spell Damage while Dual Wielding
++14 to Intelligence
+18% increased Critical Strike Chance with Lightning Skills
++13% to Lightning Resistance
+$ 5 chaos
+
+Loath Bliss Cobalt Jewel
+10% increased Critical Strike Multiplier for Spells
+6% faster start of Energy Shield Recharge
++8 to Strength and Dexterity
+$ 3 chaos
+
+Foe Shard Viridian Jewel
+11% increased Damage over Time
+14% increased Physical Damage with One Handed Melee Weapons
+10% increased Melee Critical Strike Multiplier
+$ 5 chaos
+
+Oblivion Cut Cobalt Jewel
+1% additional Chance to Block Spells with Staves
+4% increased Cast Speed while wielding a Staff
+6% increased Global Critical Strike Multiplier
+8% increased Critical Strike Multiplier with Elemental Skills
+$ 6 chaos
+
+Kraken Eye Cobalt Jewel
+14% increased Fire Damage
+5% increased Cast Speed with Lightning Skills
+11% increased Projectile Damage
+$ 3 chaos
+
+Honour Hope Viridian Jewel
+10% increased Melee Critical Strike Chance
+14% increased Weapon Critical Strike Chance while Dual Wielding
+7% increased maximum Life
+$ 2 exalt
+
+Ghoul Desire Crimson Jewel
+17% increased Weapon Critical Strike Chance while Dual Wielding
+7% increased maximum Life
++9% to Chaos Resistance
++2 Life gained for each Enemy hit by your Attacks
+$ 8 chaos
+
+Sol Heart Crimson Jewel
+16% increased Weapon Critical Strike Chance while Dual Wielding
+5% increased maximum Life
+11% increased Melee Damage
+$ 1 exalt
+
+Sol Splinter Viridian Jewel
+10% increased Global Critical Strike Chance
+17% increased Weapon Critical Strike Chance while Dual Wielding
+6% increased maximum Life
+10% increased Melee Damage
+$ 9 exalt
+
+Dragon Dream Viridian Jewel
+6% increased Accuracy Rating
+6% increased Global Critical Strike Chance
+14% increased Weapon Critical Strike Chance while Dual Wielding
+6% increased maximum Life
+$ 1 exalt
+
+Armageddon Wound Crimson Jewel
+17% increased Weapon Critical Strike Chance while Dual Wielding
+7% increased maximum Life
++8 to Strength and Intelligence
+$ 1 exalt

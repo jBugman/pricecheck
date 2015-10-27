@@ -22,17 +22,24 @@ var currencyRatio = map[string]float64{
 var propertyRegexes = [][]string{
 	{"Life", "(\\d*?)% increased maximum Life"},
 	{"Mana", "(\\d*?)% increased maximum Mana"},
+
 	{"Reduced Mana Cost", "(\\d*?)% reduced Mana Cost of Skills"},
 	{"Rarity of Items found", "(\\d*?)% increased Rarity of Items found"},
 
+	{"Life gained on hit", "\\+(\\d*?) Life gained for each Enemy hit by your Attacks"},
 	{"Energy Shield gained on hit", "\\+(\\d*?) Energy Shield gained for each Enemy hit by your Attacks"},
-	{"Physical Attack Damage Leeched as Life", "0\\.(\\d*?)% of Physical Attack Damage Leeched as Life"},
+	{"Physical Attack Damage Leeched as Life", "(.*?)% of Physical Attack Damage Leeched as Life"},
 
+	{"Evasion Rating", "(\\d*?)% increased Evasion Rating"},
+	{"Stun Recovery", "(\\d*?)% increased Stun Recovery"},
+	{"Faster start of Energy Shield Recharge", "(\\d*?)% faster start of Energy Shield Recharge"},
 	{"Chance to Block Spells while Dual Wielding", "(\\d*?)% additional Chance to Block Spells while Dual Wielding"},
 	{"Block Chance while Dual Wielding", "(\\d*?)% additional Block Chance while Dual Wielding"},
+	{"Chance to Block Spells with Staves", "(\\d*?)% additional Chance to Block Spells with Staves"},
 
 	{"Chance to Knock Back", "(\\d*?)% chance to Knock Enemies Back on hit"},
 	{"Stun Duration", "(\\d*?)% increased Stun Duration on Enemies"},
+	{"Accuracy Rating", "(\\d*?)% increased Accuracy Rating"},
 
 	{"Area Damage", "(\\d*?)% increased Area Damage"},
 	{"Damage over Time", "(\\d*?)% increased Damage over Time"},
@@ -68,6 +75,7 @@ var propertyRegexes = [][]string{
 	{"Cold and Lightning Resistances", "\\+(\\d*?)% to Cold and Lightning Resistances"},
 	{"Fire and Lightning Resistances", "\\+(\\d*?)% to Fire and Lightning Resistances"},
 	{"Fire and Cold Resistances", "\\+(\\d*?)% to Fire and Cold Resistances"},
+	{"All Elemental Resistances", "\\+(\\d*?)% to all Elemental Resistances"},
 	{"Chaos Resistance", "\\+(\\d*?)% to Chaos Resistance"},
 
 	{"Attack Speed", "(\\d*?)% increased Attack Speed"},
@@ -85,12 +93,14 @@ var propertyRegexes = [][]string{
 	{"Physical Damage with Daggers", "(\\d*?)% increased Physical Damage with Daggers"},
 	{"Physical Damage with Axes", "(\\d*?)% increased Physical Damage with Axes"},
 	{"Physical Weapon Damage while Dual Wielding", "(\\d*?)% increased Physical Weapon Damage while Dual Wielding"},
+	{"Melee Physical Damage while holding a Shield", "(\\d*?)% increased Melee Physical Damage while holding a Shield"},
 
 	{"Damage", "(\\d*?)% increased Damage"},
 	{"Cold Damage", "(\\d*?)% increased Cold Damage"},
 	{"Fire Damage", "(\\d*?)% increased Fire Damage"},
 	{"Lightning Damage", "(\\d*?)% increased Lightning Damage"},
 	{"Physical Damage", "(\\d*?)% increased Physical Damage"},
+	{"Chaos Damage", "(\\d*?)% increased Chaos Damage"},
 	{"Melee Damage", "(\\d*?)% increased Melee Damage"},
 	{"Projectile Damage", "(\\d*?)% increased Projectile Damage"},
 
@@ -101,9 +111,13 @@ var propertyRegexes = [][]string{
 	{"Weapon Critical Strike Chance while Dual Wielding", "(\\d*?)% increased Weapon Critical Strike Chance while Dual Wielding"},
 	{"Critical Strike Chance for Spells", "(\\d*?)% increased Critical Strike Chance for Spells"},
 	{"Critical Strike Chance with Cold Skills", "(\\d*?)% increased Critical Strike Chance with Cold Skills"},
+	{"Critical Strike Chance with Fire Skills", "(\\d*?)% increased Critical Strike Chance with Fire Skills"},
+	{"Critical Strike Chance with Lightning Skills", "(\\d*?)% increased Critical Strike Chance with Lightning Skills"},
+	{"Critical Strike Chance with One Handed Melee Weapons", "(\\d*?)% increased Critical Strike Chance with One Handed Melee Weapons"},
 	{"Critical Strike Chance with Two Handed Melee Weapons", "(\\d*?)% increased Critical Strike Chance with Two Handed Melee Weapons"},
 
 	{"Global Critical Strike Multiplier", "(\\d*?)% increased Global Critical Strike Multiplier"},
+	{"Melee Critical Strike Multiplier", "(\\d*?)% increased Melee Critical Strike Multiplier"},
 	{"Critical Strike Multiplier with Elemental Skills", "(\\d*?)% increased Critical Strike Multiplier with Elemental Skills"},
 	{"Critical Strike Multiplier with Lightning Skills", "(\\d*?)% increased Critical Strike Multiplier with Lightning Skills"},
 	{"Critical Strike Multiplier with Fire Skills", "(\\d*?)% increased Critical Strike Multiplier with Fire Skills"},
@@ -125,7 +139,7 @@ func Properties() []string {
 // Item is basic PoE item model
 type Item struct {
 	Name   string
-	Params map[string]int // Maybe should make properties float (i.e. leech)
+	Params map[string]float64
 	Price  float64
 }
 
@@ -201,7 +215,7 @@ func (p parser) parseItem(text string, strict bool) (Item, error) {
 	lines := strings.Split(text, "\n")
 	item := Item{
 		Name:   lines[0],
-		Params: make(map[string]int),
+		Params: make(map[string]float64),
 	}
 	for i := 1; i < len(lines); i++ {
 		line := lines[i]
@@ -217,7 +231,7 @@ func (p parser) parseItem(text string, strict bool) (Item, error) {
 		var matched bool
 		for k, r := range p.regexes {
 			if matches := r.FindStringSubmatch(line); matches != nil {
-				val, err := strconv.Atoi(matches[1])
+				val, err := strconv.ParseFloat(matches[1], 64)
 				if err != nil {
 					return Item{}, err
 				}
