@@ -1,0 +1,38 @@
+{
+    "filter": {
+        "bool": {
+            "must": [
+                {
+                    "term": {
+                        "itemType": "Jewel"
+                    }
+                },
+                {
+                    "term": {
+                        "attributes.league": "Standard"
+                    }
+                },
+                {
+                    "term": {
+                        "shop.verified": "yes"
+                    }
+                },
+                {
+                    "range": {
+                        "shop.chaosEquiv": {
+                            "gt": 0
+                        }
+                    }
+                }
+            ],
+            "must_not": [
+                {
+                    "term": {
+                        "rarity": "Unique"
+                    }
+                }
+            ]
+        }
+    },
+    "size": 100
+}

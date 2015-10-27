@@ -10,10 +10,10 @@ import (
 )
 
 const (
-	iterations   = 3001
+	iterations   = 2501
 	learningRate = 0.7
 	mFactor      = 0.4
-	hiddenLayerK = 1.0
+	hiddenLayerK = 0.3
 )
 
 var (
@@ -52,15 +52,22 @@ func preparePattern(item poe.Item) []float64 {
 func main() {
 
 	fmt.Println("== Items ==")
-	items, err := poe.LoadFromFile("data.txt")
+	//	items, err := poe.LoadFromFile("data.txt")
+	items, err := poe.LoadFromJsonFile("jewels.json")
 	if err != nil {
 		log.Fatal(err)
 	}
+	items2, err := poe.LoadFromJsonFile("jewels2.json")
+	if err != nil {
+		log.Fatal(err)
+	}
+	items = append(items, items2...)
+	fmt.Println("Items loaded:", len(items))
 	//	for _, it := range items {
 	//		fmt.Println(it)
 	//	}
 
-	fmt.Println("== Patterns ==")
+	fmt.Println("== Feature vectors ==")
 	patterns, maxPrice := preparePatterns(items)
 	//	for _, p := range patterns {
 	//		fmt.Println(p)
@@ -79,8 +86,9 @@ func main() {
 		if err != nil {
 			log.Fatal(err)
 		}
+		fmt.Println(item)
 		inputs := preparePattern(item)
-		fmt.Println(nn.Update(inputs)[0]*maxPrice, "->", price)
+		fmt.Println(price, "->", nn.Update(inputs)[0]*maxPrice)
 	}
 
 	testFunc(`Gale Edge Crimson Jewel

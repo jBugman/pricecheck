@@ -19,121 +19,9 @@ var currencyRatio = map[string]float64{
 	"alch":   0.333,
 }
 
-var propertyRegexes = [][]string{
-	{"Life", "(\\d*?)% increased maximum Life"},
-	{"Mana", "(\\d*?)% increased maximum Mana"},
-
-	{"Reduced Mana Cost", "(\\d*?)% reduced Mana Cost of Skills"},
-	{"Rarity of Items found", "(\\d*?)% increased Rarity of Items found"},
-
-	{"Life gained on hit", "\\+(\\d*?) Life gained for each Enemy hit by your Attacks"},
-	{"Energy Shield gained on hit", "\\+(\\d*?) Energy Shield gained for each Enemy hit by your Attacks"},
-	{"Physical Attack Damage Leeched as Life", "(.*?)% of Physical Attack Damage Leeched as Life"},
-
-	{"Evasion Rating", "(\\d*?)% increased Evasion Rating"},
-	{"Stun Recovery", "(\\d*?)% increased Stun Recovery"},
-	{"Faster start of Energy Shield Recharge", "(\\d*?)% faster start of Energy Shield Recharge"},
-	{"Chance to Block Spells while Dual Wielding", "(\\d*?)% additional Chance to Block Spells while Dual Wielding"},
-	{"Block Chance while Dual Wielding", "(\\d*?)% additional Block Chance while Dual Wielding"},
-	{"Chance to Block Spells with Staves", "(\\d*?)% additional Chance to Block Spells with Staves"},
-
-	{"Chance to Knock Back", "(\\d*?)% chance to Knock Enemies Back on hit"},
-	{"Stun Duration", "(\\d*?)% increased Stun Duration on Enemies"},
-	{"Accuracy Rating", "(\\d*?)% increased Accuracy Rating"},
-
-	{"Area Damage", "(\\d*?)% increased Area Damage"},
-	{"Damage over Time", "(\\d*?)% increased Damage over Time"},
-	{"Projectile Speed", "(\\d*?)% increased Projectile Speed"},
-	{"Attack and Cast Speed", "(\\d*?)% increased Attack and Cast Speed"},
-
-	{"Ignite Duration", "(\\d*?)% increased Ignite Duration on Enemies"},
-	{"Shock Duration", "(\\d*?)% increased Shock Duration on Enemies"},
-	{"Freeze Duration", "(\\d*?)% increased Freeze Duration on Enemies"},
-	{"Chance to Ignite", "(\\d*?)% chance to Ignite"},
-	{"Chance to Shock", "(\\d*?)% chance to Shock"},
-	{"Chance to Freeze", "(\\d*?)% chance to Freeze"},
-
-	{"Dexterity", "\\+(\\d*?) to Dexterity"},
-	{"Intelligence", "\\+(\\d*?) to Intelligence"},
-	{"Strength", "\\+(\\d*?) to Strength"},
-	{"Strength and Intelligence", "\\+(\\d*?) to Strength and Intelligence"},
-
-	{"Minion Life", "(\\d*?)% increased Minion Life"},
-	{"Minion Damage", "Minions deal (\\d*?)% increased Damage"},
-	{"Minion Chance to Block", "Minions have (\\d*?)% Chance to Block"},
-	{"Minion Elemental Resistances", "Minions have \\+(\\d*?)% to all Elemental Resistances"},
-
-	{"Totems Life", "(\\d*?)% increased Totem Life"},
-	{"Totems Damage", "Totems deal (\\d*?)% increased Damage"},
-	{"Totems Elemental Resistances", "Totems gain \\+(\\d*?)% to all Elemental Resistances"},
-
-	{"Mine Damage", "(\\d*?)% increased Mine Damage"},
-
-	{"Fire Resistance", "\\+(\\d*?)% to Fire Resistance"},
-	{"Cold Resistance", "\\+(\\d*?)% to Cold Resistance"},
-	{"Lightning Resistance", "\\+(\\d*?)% to Lightning Resistance"},
-	{"Cold and Lightning Resistances", "\\+(\\d*?)% to Cold and Lightning Resistances"},
-	{"Fire and Lightning Resistances", "\\+(\\d*?)% to Fire and Lightning Resistances"},
-	{"Fire and Cold Resistances", "\\+(\\d*?)% to Fire and Cold Resistances"},
-	{"All Elemental Resistances", "\\+(\\d*?)% to all Elemental Resistances"},
-	{"Chaos Resistance", "\\+(\\d*?)% to Chaos Resistance"},
-
-	{"Attack Speed", "(\\d*?)% increased Attack Speed"},
-	{"Attack Speed with Wands", "(\\d*?)% increased Attack Speed with Wands"},
-	{"Attack Speed with Swords", "(\\d*?)% increased Attack Speed with Swords"},
-	{"Attack Speed with Axes", "(\\d*?)% increased Attack Speed with Axes"},
-	{"Attack Speed while holding a Shield", "(\\d*?)% increased Attack Speed while holding a Shield"},
-	{"Attack Speed while Dual Wielding", "(\\d*?)% increased Attack Speed while Dual Wielding"},
-
-	{"Cast Speed", "(\\d*?)% increased Cast Speed"},
-	{"Cast Speed with Cold Skills", "(\\d*?)% increased Cast Speed with Cold Skills"},
-	{"Cast Speed with Fire Skills", "(\\d*?)% increased Cast Speed with Fire Skills"},
-	{"Cast Speed with Lightning Skills", "(\\d*?)% increased Cast Speed with Lightning Skills"},
-
-	{"Physical Damage with Daggers", "(\\d*?)% increased Physical Damage with Daggers"},
-	{"Physical Damage with Axes", "(\\d*?)% increased Physical Damage with Axes"},
-	{"Physical Weapon Damage while Dual Wielding", "(\\d*?)% increased Physical Weapon Damage while Dual Wielding"},
-	{"Melee Physical Damage while holding a Shield", "(\\d*?)% increased Melee Physical Damage while holding a Shield"},
-
-	{"Damage", "(\\d*?)% increased Damage"},
-	{"Cold Damage", "(\\d*?)% increased Cold Damage"},
-	{"Fire Damage", "(\\d*?)% increased Fire Damage"},
-	{"Lightning Damage", "(\\d*?)% increased Lightning Damage"},
-	{"Physical Damage", "(\\d*?)% increased Physical Damage"},
-	{"Chaos Damage", "(\\d*?)% increased Chaos Damage"},
-	{"Melee Damage", "(\\d*?)% increased Melee Damage"},
-	{"Projectile Damage", "(\\d*?)% increased Projectile Damage"},
-
-	{"Spell Damage while Dual Wielding", "(\\d*?)% increased Spell Damage while Dual Wielding"},
-	{"Spell Damage while holding a Shield", "(\\d*?)% increased Spell Damage while holding a Shield"},
-
-	{"Global Critical Strike Chance", "(\\d*?)% increased Global Critical Strike Chance"},
-	{"Weapon Critical Strike Chance while Dual Wielding", "(\\d*?)% increased Weapon Critical Strike Chance while Dual Wielding"},
-	{"Critical Strike Chance for Spells", "(\\d*?)% increased Critical Strike Chance for Spells"},
-	{"Critical Strike Chance with Cold Skills", "(\\d*?)% increased Critical Strike Chance with Cold Skills"},
-	{"Critical Strike Chance with Fire Skills", "(\\d*?)% increased Critical Strike Chance with Fire Skills"},
-	{"Critical Strike Chance with Lightning Skills", "(\\d*?)% increased Critical Strike Chance with Lightning Skills"},
-	{"Critical Strike Chance with One Handed Melee Weapons", "(\\d*?)% increased Critical Strike Chance with One Handed Melee Weapons"},
-	{"Critical Strike Chance with Two Handed Melee Weapons", "(\\d*?)% increased Critical Strike Chance with Two Handed Melee Weapons"},
-
-	{"Global Critical Strike Multiplier", "(\\d*?)% increased Global Critical Strike Multiplier"},
-	{"Melee Critical Strike Multiplier", "(\\d*?)% increased Melee Critical Strike Multiplier"},
-	{"Critical Strike Multiplier with Elemental Skills", "(\\d*?)% increased Critical Strike Multiplier with Elemental Skills"},
-	{"Critical Strike Multiplier with Lightning Skills", "(\\d*?)% increased Critical Strike Multiplier with Lightning Skills"},
-	{"Critical Strike Multiplier with Fire Skills", "(\\d*?)% increased Critical Strike Multiplier with Fire Skills"},
-	{"Critical Strike Multiplier with Cold Skills", "(\\d*?)% increased Critical Strike Multiplier with Cold Skills"},
-	{"Critical Strike Multiplier for Spells", "(\\d*?)% increased Critical Strike Multiplier for Spells"},
-	{"Critical Strike Multiplier with One Handed Melee Weapons", "(\\d*?)% increased Critical Strike Multiplier with One Handed Melee Weapons"},
-	{"Critical Strike Multiplier with Two Handed Melee Weapons", "(\\d*?)% increased Critical Strike Multiplier with Two Handed Melee Weapons"},
-}
-
 // Properties returns list of all known properties
 func Properties() []string {
-	list := make([]string, len(propertyRegexes))
-	for i := range propertyRegexes {
-		list[i] = propertyRegexes[i][0]
-	}
-	return list
+	return instance().properties
 }
 
 // Item is basic PoE item model
@@ -145,6 +33,7 @@ type Item struct {
 
 type parser struct {
 	regexes     map[string]*regexp.Regexp
+	properties  []string
 	initialized bool
 }
 
@@ -159,10 +48,12 @@ func instance() parser {
 
 func newParser() parser {
 	p := parser{
-		regexes: make(map[string]*regexp.Regexp),
+		regexes:    make(map[string]*regexp.Regexp),
+		properties: make([]string, len(propertyRegexes)),
 	}
-	for _, r := range propertyRegexes {
+	for i, r := range propertyRegexes {
 		p.regexes[r[0]] = regexp.MustCompile(r[1])
+		p.properties[i] = r[0]
 	}
 	return p
 }

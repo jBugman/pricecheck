@@ -596,3 +596,9 @@ Armageddon Wound Crimson Jewel
 7% increased maximum Life
 +8 to Strength and Intelligence
 $ 1 exalt
+
+Fulgent Spark Viridian Jewel
+18% increased Weapon Critical Strike Chance while Dual Wielding
+6% increased maximum Life
+6% increased Projectile Speed
+$ 15 chaos
