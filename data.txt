@@ -1,0 +1,274 @@
+Cataclysm Eye Cobalt Jewel
+11% increased Critical Strike Multiplier with Lightning Skills
+Minions deal 16% increased Damage
+10% increased Area Damage
+$ 1 exalt
+
+Rapture Drop Cobalt Jewel
+12% increased Damage over Time
++12 to Intelligence
+Minions deal 16% increased Damage
+$ 1 exalt
+
+Spirit Breath Cobalt Jewel
+8% increased Critical Strike Multiplier with Elemental Skills
++13% to Fire Resistance
+Minions deal 16% increased Damage
+$ 1 exalt
+
+Armageddon Splinter Cobalt Jewel
++15% to Cold Resistance
+Minions deal 16% increased Damage
+Minions have 4% Chance to Block
+$ 1 exalt
+
+Entropy Wound Cobalt Jewel
+14% increased Spell Damage while Dual Wielding
+Minions deal 16% increased Damage
+2% increased Attack and Cast Speed
+$ 2 exalt
+
+Leadership Cobalt Jewel of Entropy
+10% increased Damage over Time
+Minions deal 15% increased Damage
+$ 1 fuse
+
+Leadership Cobalt Jewel of Grounding
++14% to Lightning Resistance
+Minions deal 16% increased Damage
+$ 1 chaos
+
+Brood Spark Cobalt Jewel
+4% increased Cast Speed with Cold Skills
++3 Energy Shield gained for each Enemy hit by your Attacks
+4% increased Ignite Duration on Enemies
+Minions deal 15% increased Damage
+2% chance to Ignite
+$ 3 chaos
+
+Cataclysm Ruin Cobalt Jewel
+16% increased Spell Damage while holding a Shield
+12% increased Shock Duration on Enemies
+Minions deal 16% increased Damage
+2% chance to Shock
++8 to Strength and Intelligence
+$ 5 chaos
+
+Leadership Cobalt Jewel of Unmaking
+9% increased Critical Strike Multiplier for Spells
+Minions deal 15% increased Damage
+$ 5 chaos
+
+Leadership Cobalt Jewel of Dexterity
++15 to Dexterity
+Minions deal 14% increased Damage
+$ 5 chaos
+
+Leadership Cobalt Jewel of Grounding
++15% to Lightning Resistance
+Minions deal 14% increased Damage
+$ 5.5 chaos
+
+Ghoul Eye Cobalt Jewel
+11% increased Critical Strike Chance for Spells
+18% increased Critical Strike Chance with Cold Skills
+5% increased Ignite Duration on Enemies
+Minions deal 14% increased Damage
+3% chance to Ignite
+$ 7 chaos
+
+Hypnotic Ruin Cobalt Jewel
+16% increased Cold Damage
+Minions deal 14% increased Damage
++11% to Cold and Lightning Resistances
+$ 10 chaos
+
+Foe Wisdom Cobalt Jewel
+16% increased Cold Damage
++2 Energy Shield gained for each Enemy hit by your Attacks
+Minions deal 15% increased Damage
+$ 10 chaos
+
+Maelström Drop Cobalt Jewel
+6% increased Attack Speed with Wands
+Minions deal 14% increased Damage
+Minions have +6% to all Elemental Resistances
+$ 10 chaos
+
+Kraken Ornament Cobalt Jewel
+1% additional Chance to Block Spells while Dual Wielding
++13% to Cold Resistance
++3 Energy Shield gained for each Enemy hit by your Attacks
+Minions deal 15% increased Damage
+$ 13 chaos
+
+Honour Heart Cobalt Jewel
+5% increased Attack Speed while holding a Shield
+Minions deal 16% increased Damage
+5% chance to Knock Enemies Back on hit
+$ 11 chaos
+
+Gale Cry Cobalt Jewel
++16 to Intelligence
+6% increased Attack Speed with Wands
+Minions deal 16% increased Damage
+$ 7 regret
+
+Hypnotic Ornament Crimson Jewel
+14% increased Physical Weapon Damage while Dual Wielding
+8% increased Attack Speed with Swords
+12% increased Freeze Duration on Enemies
+3% chance to Freeze
++10 to Strength and Dexterity
+$ 1 chaos
+
+Carrion Glimmer Crimson Jewel
+14% increased Physical Weapon Damage while Dual Wielding
+14% increased Stun Duration on Enemies
+2% increased Attack and Cast Speed
+$ 5 chaos
+
+Gladiator's Viridian Jewel of Soaring
+14% increased Physical Weapon Damage while Dual Wielding
+8% increased Projectile Speed
+$ 1 chaos
+
+Gladiator's Crimson Jewel of Archery
+14% increased Physical Weapon Damage while Dual Wielding
+10% increased Projectile Damage
+$ 6 fuse
+
+Chimeric Delirium Viridian Jewel
+14% increased Physical Weapon Damage while Dual Wielding
+16% increased Physical Damage with Daggers
+10% increased Global Critical Strike Chance
+$ 15 chaos
+
+Pandemonium Blood Crimson Jewel
+16% increased Lightning Damage
+18% increased Weapon Critical Strike Chance while Dual Wielding
++12% to Cold and Lightning Resistances
+$ 2 chaos
+
+Loath Creed Cobalt Jewel
+6% increased Attack Speed while Dual Wielding
+16% increased Shock Duration on Enemies
+2% chance to Shock
++10% to Fire and Lightning Resistances
+$ 1 chaos
+
+Spirit Drop Cobalt Jewel
+10% increased Damage over Time
+5% increased Cast Speed with Cold Skills
+2% increased Cast Speed
+Minions have 12% increased maximum Life
+$ 2 chaos
+
+Blight Sliver Viridian Jewel
+14% increased Physical Damage
+8% increased Attack Speed with Axes
+8% increased Global Critical Strike Multiplier
+$ 3 chaos
+
+Gale Wound Crimson Jewel
+14% increased Physical Damage with Axes
+12% increased Melee Damage
++10% to Fire and Cold Resistances
+$ 10 chaos
+
+Pandemonium Ichor Viridian Jewel
+13% increased Physical Damage with One Handed Melee Weapons
+5% increased Attack Speed while holding a Shield
++12% to Cold and Lightning Resistances
+$ 15 chaos
+
+Eagle Desire Viridian Jewel
+8% increased Damage
+15% increased Physical Damage with Daggers
++10% to Fire and Lightning Resistances
+$ 15 chaos
+
+Armageddon Heart Viridian Jewel
+14% increased Physical Damage
++16 to Dexterity
+10% increased Global Critical Strike Chance
+$ 10 chaos
+
+Foe Shard Viridian Jewel
+10% increased Damage
+14% increased Physical Damage
+10% increased Totem Life
+$ 10 chaos
+
+Oblivion Butcher Viridian Jewel
+15% increased Physical Damage with Axes
+16% increased Critical Strike Chance with Two Handed Melee Weapons
+3% reduced Mana Cost of Skills
++12% to Fire and Lightning Resistances
+$ 2 chaos
+
+Rapture Lens Cobalt Jewel
+5% increased Attack Speed while holding a Shield
+8% increased Totem Life
++11% to Cold and Lightning Resistances
+$ 4 alt
+
+Savage Viridian Jewel of Athletics
+14% increased Physical Damage with Claws
++8 to Strength and Dexterity
+$ 4 jew
+
+Humming Viridian Jewel of the Dragon
+16% increased Lightning Damage
++14% to Fire Resistance
+$ 2 jew
+
+Infernal Crimson Jewel of Insulation
+10% increased Critical Strike Multiplier with Fire Skills
++10% to Fire and Lightning Resistances
+$ 4 alt
+
+Champion's Viridian Jewel of Raiding
+14% increased Physical Damage with Two Handed Melee Weapons
+5% increased Rarity of Items found
+$ 10 chaos
+
+Sabotage Viridian Jewel of Berserking
+16% increased Mine Damage
+5% increased Attack Speed
+$ 1 fuse
+
+Fencing Crimson Jewel of Spirit
+8% increased Attack Speed with Swords
++9 to Strength and Intelligence
+$ 1 fuse
+
+Cryomantic Cobalt Jewel of Menace
+3% increased Cast Speed with Cold Skills
+12% increased Global Critical Strike Chance
+$ 5 chaos
+
+Sinister Crimson Jewel of Menace
+15% increased Physical Damage with Axes
+12% increased Global Critical Strike Chance
+$ 1 chaos
+
+Parrying Crimson Jewel of Menace
+1% additional Block Chance while Dual Wielding
+12% increased Global Critical Strike Chance
+$ 4 alch
+
+Humming Cobalt Jewel of Menace
+16% increased Lightning Damage
+12% increased Global Critical Strike Chance
+$ 5 chaos
+
+Cruel Cobalt Jewel of Menace
+15% increased Physical Damage with Wands
+11% increased Global Critical Strike Chance
+$ 1 chaos
+
+Rupturing Crimson Jewel of Menace
+10% increased Global Critical Strike Chance
+11% increased Critical Strike Multiplier with Two Handed Melee Weapons
+$ 4 chaos
