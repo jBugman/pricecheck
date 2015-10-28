@@ -602,3 +602,35 @@ Fulgent Spark Viridian Jewel
 6% increased maximum Life
 6% increased Projectile Speed
 $ 15 chaos
+
+Gale Edge Crimson Jewel
+13% increased Physical Weapon Damage while Dual Wielding
+8% increased Attack Speed with Swords
+3% reduced Mana Cost of Skills
+$ 5 chaos
+
+Blight Glimmer Crimson Jewel
+15% increased Weapon Critical Strike Chance while Dual Wielding
+5% increased maximum Life
+14% increased Freeze Duration on Enemies
+2% chance to Freeze
+$ 20 chaos
+
+Spirit Splinter Crimson Jewel
+15% increased Fire Damage
+10% increased Critical Strike Multiplier with One Handed Melee Weapons
+4% increased Attack and Cast Speed
+$ 2 chaos
+
+Chimeric Flame Crimson Jewel
+6% increased Attack Speed while holding a Shield
+0.2% of Physical Attack Damage Leeched as Life
+11% increased Area Damage
+Totems gain +6% to all Elemental Resistances
+$ 3 chaos
+
+Ghoul Ruin Viridian Jewel
+14% increased Physical Damage with Claws
+13% increased Chaos Damage
+5% increased Attack Speed
+$ 10 chaos
